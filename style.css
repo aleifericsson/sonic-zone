@@ -5,7 +5,7 @@ body{
 
 .header{
     display:flex;
-    height:200px;
+    height:100px;
     align-items: center;
     justify-content: space-between;
     background-color: darkslateblue;
@@ -14,25 +14,28 @@ body{
 
 .logo{
     display:flex;
-    flex-shrink: 0;
+    align-items: center;
+    padding-left: 20px;
+    gap:20px;
 }
 
 h2 {
     font-size:24px;
-    color:#E5E7EB;
+    color:white;
     font-weight:bold;
     font-family:'Courier New', Courier, monospace;
 }
 
 .small-icon{
-    height:150px;
-    width:150px;
+    height:50px;
+    width:50px;
 }
 
 ul{
     display:flex;
     gap: 10px;
     list-style-type: none;
+    padding-right: 20px;
 }
 
 a{
@@ -44,6 +47,9 @@ li, p, a {
     color:#E5E7EB;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.desc, .caption {
+    color:darkslateblue;
+}
 
 .section1 {
     height: 500px;
@@ -53,23 +59,28 @@ li, p, a {
     justify-content: center;
     align-items: center;
     background-image: url("images/sonic-banner.png");
+    opacity:0.5;
 }
 
 .left-side{
     display:flex;
     flex-direction: column;
+    width:500px;
+    opacity:1;
 }
 
 h1{
     font-size:48px;
     font-weight:900;
-    color:#E5E7EB;
+    color:darkslateblue;
     font-family:'Courier New', Courier, monospace;
+    opacity:1;
 }
 
 button{
     border-radius: 15px;
     font-size:18px;
+    width:150px;
     color:#E5E7EB;
     border-color: #E5E7EB;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -78,19 +89,26 @@ button{
     border-style: double;
     border-width: 5px;
     padding: 5px 20px;
+    opacity:1;
 }
 
 .top-pic{
     height: 300px;
     width:auto;
+    border-radius: 20px;
+    border-color: white;
+    border-width: 10px;
+    opacity:1;
 }
 
 .section2 {
     background-color: white;
-    height:350px;
+    height:500px;
     width:auto;
     display:flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 h3{
@@ -111,6 +129,7 @@ h3{
     width:250px;
     height:auto;
     padding:5px;
+    align-items: center;
 }
 
 .icon{
@@ -129,6 +148,9 @@ h3{
     justify-content: center;
     align-items: center;
     background-image: url("images/sonic-bottom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.5;
 }
 
 .quote{
@@ -143,6 +165,7 @@ h4{
     color:darkslateblue;
     padding:0;
     margin:0;
+    opacity:1;
 }
 
 h5{
@@ -150,11 +173,17 @@ h5{
     font-size: 24px;
     color:darkslateblue;
     align-self: end;
+    opacity:1;
 }
 
-.section2 {
+.white{
+    color:white;
+    align-self: baseline;
+}
+
+.section4 {
     background-color: white;
-    height:350px;
+    height:200px;
     width:auto;
     display:flex;
     justify-content: center;
@@ -167,14 +196,15 @@ h5{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: auto 25px;
-    height: 250px;
+    padding: auto 25px auto 0;
+    height: 150px;
 }
 
 .box-left{
     display:flex;
     flex-direction: column;
     align-items: baseline;
+    padding:20px;
 }
 
 .footer{
@@ -183,4 +213,12 @@ h5{
     align-items: center;
     justify-content:center;
     background-color: darkslateblue;
+}
+
+.inverted{
+    margin-right: 20px;
+}
+
+#full{
+    opacity:1;
 }

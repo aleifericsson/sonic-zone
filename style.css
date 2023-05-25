@@ -109,7 +109,8 @@ button{
 
 .section2 {
     background-color: white;
-    height:500px;
+    height:auto;
+    padding:20px;
     width:auto;
     display:flex;
     flex-direction: column;
